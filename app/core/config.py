@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()  # This will load environment variables from .env
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 
 class Settings(BaseSettings):
     APP_NAME: str = "FastAPI Backend"

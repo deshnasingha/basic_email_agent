@@ -1,10 +1,10 @@
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Personalization, To, Bcc, Email
 from app.db.schemas.responses import APIResponse, StatusEnum
+from app.core.config import SENDGRID_API_KEY
 
 
-
-sg = SendGridAPIClient(api_key="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")
+sg = SendGridAPIClient(api_key=SENDGRID_API_KEY)
 
 def send(toaddr, subject, body):
     to = toaddr

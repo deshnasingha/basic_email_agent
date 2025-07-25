@@ -13,8 +13,8 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api"
     
     
-    MYSQL_HOST : str= '127.0.0.1'
-    MYSQL_USER : str=  'dbuser'
-    MYSQL_PASSWORD : str=  'user123'
-    MYSQL_DB : str= 'workflowdb'
-    MYSQL_PORT : int=  3306
+    MYSQL_HOST : str= ''
+    MYSQL_USER : str=  ''
+    MYSQL_PASSWORD : str=  ''
+    MYSQL_DB : str= ''
+    MYSQL_PORT : int=  
